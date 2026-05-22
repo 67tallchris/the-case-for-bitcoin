@@ -1,0 +1,4 @@
+# Cloudflare Pages redirects
+# No redirects needed for a single-page site
+# Add any future redirects here, e.g.:
+# /old-path  /new-path  301

@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A curated exploration of monetary history, macroeconomic risk, and the case for Bitcoin as sound money.">
+  <title>The Case for Bitcoin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="nav-symbol">&#x20BF;</span>
+        <span class="nav-title">The Case for Bitcoin</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#reserve-currencies">Reserve Currencies</a></li>
+        <li><a href="#debt-crisis">Debt &amp; GDP</a></li>
+        <li><a href="#after-1971">After 1971</a></li>
+        <li><a href="#debasement-history">Debasement</a></li>
+        <li><a href="#broken-money">Broken Money</a></li>
+        <li><a href="#layered-money">Layered Money</a></li>
+        <li><a href="#why-bitcoin">Why Bitcoin</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Research &amp; Insights</div>
+      <h1 class="hero-title">The Case for <span class="accent">Bitcoin</span></h1>
+      <p class="hero-subtitle">A curated exploration of monetary history, macroeconomic risk, and why Bitcoin may be the most significant financial innovation of our time.</p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-value">6</span>
+          <span class="hero-stat-label">Major Reserve Currencies in Modern History</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-value">~94 yrs</span>
+          <span class="hero-stat-label">Average Reserve Currency Lifespan</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-value">~124%</span>
+          <span class="hero-stat-label">US Debt-to-GDP Ratio (2025)</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-value">21M</span>
+          <span class="hero-stat-label">Bitcoin Hard Cap — Forever</span>
+        </div>
+      </div>
+      <a href="#reserve-currencies" class="hero-cta">Explore the Evidence ↓</a>
+    </div>
+    <div class="hero-visual">
+      <div class="bitcoin-glyph">&#x20BF;</div>
+    </div>
+  </section>
+
+  <!-- SECTION 1: RESERVE CURRENCIES -->
+  <section id="reserve-currencies" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Ray Dalio · The Changing World Order</div>
+        <h2 class="section-title">Every Reserve Currency Has an Expiration Date</h2>
+        <p class="section-desc">Throughout history, global reserve currencies have cycled through dominant empires. Each has lasted roughly a human lifetime before giving way to the next. The US Dollar, crowned the world's reserve currency at Bretton Woods in 1944, is now over 80 years old — approaching the historical average.</p>
+      </div>
+
+      <div class="chart-card">
+        <div class="chart-header">
+          <h3>Duration of Reserve Currency Dominance</h3>
+          <p>Years each currency served as the dominant global reserve currency. The dashed line marks the historical average.</p>
+        </div>
+        <div class="chart-container" style="height:340px;">
+          <canvas id="reserveCurrencyChart"></canvas>
+        </div>
+        <div class="chart-note">
+          <span class="note-icon">&#x2139;</span>
+          Based on research from Ray Dalio's <em>Principles for Dealing with the Changing World Order</em> (2021). Duration estimates represent periods of peak trade and financial dominance. The US Dollar is shown as ongoing from 1944 (Bretton Woods Agreement) through 2025.
+        </div>
+      </div>
+
+      <div class="stats-grid three-col">
+        <div class="stat-card">
+          <div class="stat-number">~94</div>
+          <div class="stat-label">Average Years</div>
+          <div class="stat-desc">The average lifespan of the five completed reserve currencies preceding the US Dollar.</div>
+        </div>
+        <div class="stat-card highlight">
+          <div class="stat-number">81+</div>
+          <div class="stat-label">Years for USD</div>
+          <div class="stat-desc">The US Dollar has been the primary reserve currency since 1944 — fast approaching the historical average.</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Historical Turnover Rate</div>
+          <div class="stat-desc">Every single reserve currency in recorded history has eventually been replaced or lost its dominant status.</div>
+        </div>
+      </div>
+
+      <div class="quote-block">
+        <div class="quote-marks">&ldquo;</div>
+        <div class="quote-text">The most important thing to know about the arc of a country's rise and decline is that it follows a logical and timeless pattern driven by a set of cause-effect relationships that are just as applicable today as they were throughout history.</div>
+        <div class="quote-author">— Ray Dalio, <em>Principles for Dealing with the Changing World Order</em> (2021)</div>
+      </div>
+
+      <div class="insight-box">
+        <div class="insight-icon">&#128270;</div>
+        <div class="insight-content">
+          <h4>What This Means</h4>
+          <p>Reserve currency cycles are driven by the rise and fall of empires: economic strength, military power, debt accumulation, and eventually debasement. Dalio identifies a predictable "Big Debt Cycle" that has played out across Portuguese, Dutch, British, and now American dominance. Each empire peaked and then showed the same late-cycle characteristics: extreme debt accumulation, wealth inequality, political polarization, and a rising challenger. Dalio has pointed to China as the rising challenger to US dominance today, and documents how the US is exhibiting many of these same late-cycle signals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: DEBT CRISIS -->
+  <section id="debt-crisis" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Macroeconomic Risk</div>
+        <h2 class="section-title">The US Debt Spiral: A Historical Reckoning</h2>
+        <p class="section-desc">The United States national debt now exceeds $36 trillion, pushing the debt-to-GDP ratio to levels last seen during World War II — and projected to keep climbing. Historically, countries that reach these ratios face a narrow set of outcomes. None of them are painless.</p>
+      </div>
+
+      <div class="metrics-row">
+        <div class="metric-card">
+          <div class="metric-label">US National Debt</div>
+          <div class="metric-value">$36.2T</div>
+          <div class="metric-sub">As of early 2025</div>
+          <a class="source-link" href="https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/debt-to-the-penny/" target="_blank" rel="noopener noreferrer">↗ US Treasury Fiscal Data</a>
+        </div>
+        <div class="metric-card danger">
+          <div class="metric-label">Debt-to-GDP Ratio</div>
+          <div class="metric-value">~124%</div>
+          <div class="metric-sub">2025 estimate</div>
+          <a class="source-link" href="https://fred.stlouisfed.org/series/GFDEGDQ188S" target="_blank" rel="noopener noreferrer">↗ Federal Reserve FRED</a>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Annual Interest Cost</div>
+          <div class="metric-value">~$1.1T</div>
+          <div class="metric-sub">Exceeds US defense budget</div>
+          <a class="source-link" href="https://www.cbo.gov/topics/budget/federal-debt" target="_blank" rel="noopener noreferrer">↗ Congressional Budget Office</a>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Annual Deficit</div>
+          <div class="metric-value">~$1.8T</div>
+          <div class="metric-sub">FY 2024 (6.4% of GDP)</div>
+          <a class="source-link" href="https://www.cbo.gov/publication/60039" target="_blank" rel="noopener noreferrer">↗ CBO FY2024 Budget Results</a>
+        </div>
+      </div>
+
+      <div class="chart-card">
+        <div class="chart-header">
+          <h3>US Federal Debt as % of GDP (1940–2025)</h3>
+          <p>The ratio has surpassed WWII-era peaks and continues to climb — with no credible fiscal consolidation plan in sight.</p>
+        </div>
+        <div class="chart-container" style="height:380px;">
+          <canvas id="debtGdpChart"></canvas>
+        </div>
+        <div class="chart-note">
+          <span class="note-icon">&#x2139;</span>
+          Data sourced from Federal Reserve Economic Data (FRED) and the US Congressional Budget Office (CBO). Post-2024 values reflect CBO baseline projections. Shaded region indicates projected trajectory.
+        </div>
+      </div>
+
+      <div class="section-subheader">
+        <h3>Historical Precedents: Nations at 100%+ Debt-to-GDP</h3>
+        <p>The historical record is sobering. Here is how other countries have fared when their debt reached comparable levels.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Country</th>
+              <th>Peak Debt/GDP</th>
+              <th>Period</th>
+              <th>Outcome</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>United Kingdom</strong></td>
+              <td>~250%</td>
+              <td>Post-WWII (1946)</td>
+              <td>30+ years of slow growth, austerity, and significant inflation eroded the real debt burden over time</td>
+              <td><span class="badge badge-yellow">Survived (slowly)</span></td>
+            </tr>
+            <tr>
+              <td><strong>Japan</strong></td>
+              <td>~260%</td>
+              <td>2024 (ongoing)</td>
+              <td>Deflation trap, Bank of Japan monetization, 30+ years of stagnation ("Lost Decades")</td>
+              <td><span class="badge badge-yellow">Ongoing</span></td>
+            </tr>
+            <tr>
+              <td><strong>Greece</strong></td>
+              <td>~180%</td>
+              <td>2011–2018</td>
+              <td>Debt crisis requiring IMF/EU bailout, severe austerity imposed, GDP fell ~25% over several years</td>
+              <td><span class="badge badge-red">Crisis / Bailout</span></td>
+            </tr>
+            <tr>
+              <td><strong>Argentina</strong></td>
+              <td>~100%</td>
+              <td>2001, 2014, 2020</td>
+              <td>Repeated sovereign defaults, hyperinflation, currency collapse (peso lost 99%+ vs USD)</td>
+              <td><span class="badge badge-red">Default / Inflation</span></td>
+            </tr>
+            <tr>
+              <td><strong>Weimar Germany</strong></td>
+              <td>Extreme</td>
+              <td>1921–1923</td>
+              <td>Hyperinflation — prices doubled every few days; wheelbarrows of cash needed to buy bread</td>
+              <td><span class="badge badge-red">Hyperinflation</span></td>
+            </tr>
+            <tr class="row-highlight">
+              <td><strong>United States</strong></td>
+              <td><strong>~124%+</strong></td>
+              <td><strong>2024–present</strong></td>
+              <td>Fiscal dominance constrains monetary policy; deficit spending continues accelerating; no credible plan to stabilize</td>
+              <td><span class="badge badge-orange">Ongoing (?)</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-source-note">
+        <span class="note-icon">&#x2139;</span>
+        Sources: <a href="https://www.imf.org/en/Publications/WEO" target="_blank" rel="noopener noreferrer">IMF World Economic Outlook Database</a> &middot; <a href="https://fred.stlouisfed.org/series/GFDEGDQ188S" target="_blank" rel="noopener noreferrer">Federal Reserve FRED</a> &middot; Reinhart &amp; Rogoff, <em>This Time Is Different</em> (2009) &middot; <a href="https://www.cbo.gov/topics/budget/federal-debt" target="_blank" rel="noopener noreferrer">US Congressional Budget Office</a>
+      </p>
+
+      <div class="insight-box">
+        <div class="insight-icon">&#128161;</div>
+        <div class="insight-content">
+          <h4>The Four Historical Escape Routes — and Their Costs</h4>
+          <p>Economists identify four ways nations resolve extreme debt burdens:</p>
+          <ol class="insight-list">
+            <li><strong>Austerity</strong> — Cutting spending and raising taxes. Deeply unpopular, politically difficult, and slow. The UK spent 30+ years on this path after WWII.</li>
+            <li><strong>Default</strong> — Outright refusal to pay creditors. Destroys credit access for years. Argentina has done this multiple times.</li>
+            <li><strong>Growth</strong> — If the economy outgrows the debt, the ratio falls naturally. This requires sustained high GDP growth — rare at this debt level, and nearly impossible with high interest rates.</li>
+            <li><strong>Inflation</strong> — The most historically common path. Governments inflate away the real value of debt, effectively transferring wealth from savers and fixed-income holders to the debtor (the government). With $36T in debt, even sustained 5% annual inflation erodes the real debt burden significantly — but at the cost of devastating ordinary savers.</li>
+          </ol>
+          <p class="insight-emphasis">The inflation path is the most politically expedient — and the most punishing for anyone holding US dollars as a store of value.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: WHAT CHANGED IN 1971 -->
+  <section id="after-1971" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Saifedean Ammous · The Fiat Standard (2021)</div>
+        <h2 class="section-title">What Changed on August 15, 1971</h2>
+        <p class="section-desc">On a Sunday evening, President Nixon announced the end of the dollar's convertibility to gold — a "temporary" measure that became permanent. The data that followed tells a story mainstream economics has struggled to explain ever since.</p>
+      </div>
+
+      <div class="before-after-grid">
+        <div class="ba-card">
+          <div class="ba-label">US Federal Debt</div>
+          <div class="ba-row">
+            <div class="ba-col">
+              <div class="ba-year">1971</div>
+              <div class="ba-value ba-value-ok">$398B</div>
+            </div>
+            <div class="ba-arrow">→</div>
+            <div class="ba-col">
+              <div class="ba-year">2025</div>
+              <div class="ba-value ba-value-bad">$36.2T</div>
+            </div>
+          </div>
+          <div class="ba-change">~90x increase in 54 years</div>
+          <a class="source-link" href="https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/debt-to-the-penny/" target="_blank" rel="noopener noreferrer">↗ US Treasury Fiscal Data</a>
+        </div>
+        <div class="ba-card">
+          <div class="ba-label">US Personal Savings Rate</div>
+          <div class="ba-row">
+            <div class="ba-col">
+              <div class="ba-year">Early 1970s</div>
+              <div class="ba-value ba-value-ok">~13%</div>
+            </div>
+            <div class="ba-arrow">→</div>
+            <div class="ba-col">
+              <div class="ba-year">2024</div>
+              <div class="ba-value ba-value-bad">~4%</div>
+            </div>
+          </div>
+          <div class="ba-change">Americans can no longer afford to save</div>
+          <a class="source-link" href="https://fred.stlouisfed.org/series/PSAVERT" target="_blank" rel="noopener noreferrer">↗ Federal Reserve FRED — PSAVERT</a>
+        </div>
+        <div class="ba-card">
+          <div class="ba-label">Young Adults Earning More Than Parents</div>
+          <div class="ba-row">
+            <div class="ba-col">
+              <div class="ba-year">Early 1970s</div>
+              <div class="ba-value ba-value-ok">~90%</div>
+            </div>
+            <div class="ba-arrow">→</div>
+            <div class="ba-col">
+              <div class="ba-year">2010s</div>
+              <div class="ba-value ba-value-bad">~50%</div>
+            </div>
+          </div>
+          <div class="ba-change">The American Dream is half as likely</div>
+          <a class="source-link" href="https://opportunityinsights.org/paper/abs-mobility-frisch/" target="_blank" rel="noopener noreferrer">↗ Raj Chetty et al. — Opportunity Insights</a>
+        </div>
+        <div class="ba-card">
+          <div class="ba-label">Dollar Purchasing Power</div>
+          <div class="ba-row">
+            <div class="ba-col">
+              <div class="ba-year">1971</div>
+              <div class="ba-value ba-value-ok">$1.00</div>
+            </div>
+            <div class="ba-arrow">→</div>
+            <div class="ba-col">
+              <div class="ba-year">2025</div>
+              <div class="ba-value ba-value-bad">~$0.13</div>
+            </div>
+          </div>
+          <div class="ba-change">~87% of purchasing power lost since 1971</div>
+          <a class="source-link" href="https://www.bls.gov/data/inflation_calculator.htm" target="_blank" rel="noopener noreferrer">↗ BLS CPI Inflation Calculator</a>
+        </div>
+      </div>
+
+      <div class="chart-card">
+        <div class="chart-header">
+          <h3>US Personal Savings Rate (1960–2024)</h3>
+          <p>Americans saved ~10–13% of income before 1971. The savings rate collapsed in the fiat era as inflation eroded purchasing power, forcing people to invest in assets just to preserve wealth.</p>
+        </div>
+        <div class="chart-container" style="height:300px;">
+          <canvas id="savingsRateChart"></canvas>
+        </div>
+        <div class="chart-note">
+          <span class="note-icon">&#x2139;</span>
+          Data: Federal Reserve Economic Data (FRED), series PSAVERT. The 2020 spike reflects pandemic-era stimulus and reduced spending, not organic saving behavior. Source: <a href="https://fred.stlouisfed.org/series/PSAVERT" target="_blank" rel="noopener noreferrer">fred.stlouisfed.org/series/PSAVERT</a>
+        </div>
+      </div>
+
+      <div class="section-subheader">
+        <h3>Productivity Grew. Wages Didn't Follow.</h3>
+        <p>The central economic story of the fiat era: the economy became dramatically more productive, but ordinary workers captured little of that growth.</p>
+      </div>
+
+      <div class="stats-grid three-col">
+        <div class="stat-card">
+          <div class="stat-number">+61%</div>
+          <div class="stat-label">US Productivity Growth (1979–2020)</div>
+          <div class="stat-desc">The American economy became dramatically more efficient and productive over four decades of the fiat era.</div>
+          <a class="source-link" href="https://www.epi.org/productivity-pay-gap/" target="_blank" rel="noopener noreferrer">↗ Economic Policy Institute</a>
+        </div>
+        <div class="stat-card highlight">
+          <div class="stat-number">+17.5%</div>
+          <div class="stat-label">Typical Worker Compensation (same period)</div>
+          <div class="stat-desc">For every dollar of productivity gain, typical workers captured only 29 cents. The rest accrued to capital owners and asset holders whose wealth inflated alongside money supply.</div>
+          <a class="source-link" href="https://www.epi.org/productivity-pay-gap/" target="_blank" rel="noopener noreferrer">↗ Economic Policy Institute</a>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">3.5×</div>
+          <div class="stat-label">The Gap: Productivity vs. Pay</div>
+          <div class="stat-desc">Productivity grew 3.5x faster than typical worker compensation from 1979 to 2020 — a divergence that did not exist before the gold standard was abandoned.</div>
+          <a class="source-link" href="https://www.epi.org/productivity-pay-gap/" target="_blank" rel="noopener noreferrer">↗ Economic Policy Institute</a>
+        </div>
+      </div>
+
+      <div class="insight-box">
+        <div class="insight-icon">&#9889;</div>
+        <div class="insight-content">
+          <h4>What Actually Triggered the Nixon Shock</h4>
+          <p>Nixon's August 15, 1971 announcement was not ideological — it was defensive. In the first six months of 1971 alone, <strong>$22 billion in assets had fled the United States</strong> as foreign governments exchanged dollars for US gold at the Bretton Woods rate of $35/oz, rapidly draining Fort Knox. France's President de Gaulle had been particularly aggressive, sending a French naval vessel to the US to physically collect gold.</p>
+          <p>Nixon chose to suspend convertibility rather than face an accelerating run on reserves. The "temporary" suspension never ended. From that day forward, every major currency in the world has been backed by nothing but political promises — a monetary experiment with no historical precedent.</p>
+          <p class="insight-emphasis">Source: Nik Bhatia, <em>Layered Money</em> (2021) &middot; <a href="https://www.federalreservehistory.org/essays/gold-convertibility-ends" target="_blank" rel="noopener noreferrer">Federal Reserve History — "Gold Convertibility Ends"</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: HISTORY OF DEBASEMENT -->
+  <section id="debasement-history" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Saifedean Ammous · The Bitcoin Standard (2018)</div>
+        <h2 class="section-title">A Brief History of Money Debasement</h2>
+        <p class="section-desc">Every government that has controlled its money supply has eventually abused that control. The pattern is always the same — expand supply to fund spending, erode the savings of citizens, and ultimately collapse the monetary system. Bitcoin is the first technology that makes this mathematically impossible.</p>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <span class="timeline-year">~100 BCE – 300 CE</span>
+          <div class="timeline-content">
+            <h4>Roman Empire: The Silver Denarius</h4>
+            <p>Julius Caesar issued the silver denarius with approximately <strong>85% silver content</strong>. As military costs rose and conquest slowed, successive emperors debased the coin — mixing in cheaper metals while keeping its name and denomination. By the reign of Gallienus in the 3rd century CE, the silver content had fallen to <strong>under 5%</strong>. The resulting inflation destabilized the empire, caused widespread economic dislocation, and contributed to the political instability that led to Rome's eventual collapse.</p>
+            <div class="timeline-stat">85% silver → under 5% silver in ~300 years</div>
+            <a class="source-link" href="https://saifedean.com/thebitcoinstandard/" target="_blank" rel="noopener noreferrer">↗ Saifedean Ammous — The Bitcoin Standard (2018)</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-year">~1890s</span>
+          <div class="timeline-content">
+            <h4>Yap Island: The Rai Stone Collapse</h4>
+            <p>For centuries, the inhabitants of Yap Island in the Pacific used giant limestone disks — some weighing up to 4 metric tons — as money. The system worked precisely because the stones were extremely difficult to quarry from distant islands, giving them a naturally high stock-to-flow ratio. When Irish-American captain David O'Keefe arrived with modern equipment and began importing large quantities of the stones in exchange for coconuts, he flooded the supply. The stones became valueless almost overnight.</p>
+            <p>Ammous uses this story to illustrate the central vulnerability of every monetary system except Bitcoin: any money whose supply can be expanded — by new technology, a new mine, or a printing press — eventually will be. The only defense is a supply schedule that no individual can override.</p>
+            <div class="timeline-stat">Centuries of stability → worthless when supply was flooded</div>
+            <a class="source-link" href="https://archive.org/details/islandofstoneone00furnrich" target="_blank" rel="noopener noreferrer">↗ William Henry Furness III — The Island of Stone Money (1910)</a>
+          </div>
+        </div>
+
+        <div class="timeline-item item-red">
+          <span class="timeline-year">1921 – 1923</span>
+          <div class="timeline-content">
+            <h4>Weimar Germany: Hyperinflation</h4>
+            <p>Following WWI, Germany faced massive war reparations under the Treaty of Versailles. The Reichsbank financed government spending by printing money without restraint. Prices doubled every few days. At its peak in <strong>November 1923</strong>, the exchange rate reached <strong>4.2 trillion marks per US dollar</strong>. Workers were paid twice daily and rushed to spend their wages before prices rose again. The middle class's life savings were wiped out overnight. The social destruction contributed directly to the political conditions that enabled the rise of National Socialism a decade later.</p>
+            <div class="timeline-stat">4.2 trillion marks = $1 USD by November 1923</div>
+            <a class="source-link" href="https://saifedean.com/thebitcoinstandard/" target="_blank" rel="noopener noreferrer">↗ Saifedean Ammous — The Bitcoin Standard (2018)</a>
+          </div>
+        </div>
+
+        <div class="timeline-item item-red">
+          <span class="timeline-year">1933 – 1934</span>
+          <div class="timeline-content">
+            <h4>United States: FDR's Gold Confiscation</h4>
+            <p>In 1933, President Roosevelt signed <strong>Executive Order 6102</strong>, requiring all US citizens to surrender their gold coins, gold bullion, and gold certificates to Federal Reserve Banks — under penalty of up to 10 years imprisonment. Citizens received $20.67 per troy ounce. Then in 1934, the Gold Reserve Act raised the official gold price to <strong>$35 per troy ounce</strong> — an overnight <strong>41% devaluation</strong> of every dollar exchanged for gold the year prior. The government captured the entire windfall. Citizens who had trusted the government's promise had no recourse.</p>
+            <div class="timeline-stat">Gold confiscated at $20.67/oz · Revalued to $35/oz the next year · 41% devaluation</div>
+            <a class="source-link" href="https://www.federalreservehistory.org/essays/roosevelts-gold-program" target="_blank" rel="noopener noreferrer">↗ Federal Reserve History — Roosevelt's Gold Program</a>
+          </div>
+        </div>
+
+        <div class="timeline-item item-red">
+          <span class="timeline-year">1971</span>
+          <div class="timeline-content">
+            <h4>United States: The Nixon Shock</h4>
+            <p>On August 15, 1971, President Nixon ended the dollar's convertibility to gold — eliminating the last physical anchor for any major currency on earth. From this moment, every nation's money supply became theoretically unlimited, constrained only by political will. The "temporary" suspension became a permanent feature of the global monetary system. In the 54 years since, the dollar has lost approximately <strong>87% of its purchasing power</strong>, total US debt has increased roughly <strong>90-fold</strong>, and no mechanism exists to prevent further expansion.</p>
+            <div class="timeline-stat">$1 in 1971 = ~$0.13 today · Every major currency is now fully fiat</div>
+            <a class="source-link" href="https://www.federalreservehistory.org/essays/gold-convertibility-ends" target="_blank" rel="noopener noreferrer">↗ Federal Reserve History — Gold Convertibility Ends</a>
+          </div>
+        </div>
+
+        <div class="timeline-item item-btc">
+          <span class="timeline-year">2009</span>
+          <div class="timeline-content">
+            <h4>Bitcoin: The First Undebaseable Money</h4>
+            <p>On January 3, 2009, Satoshi Nakamoto mined the first Bitcoin block — embedding a <em>Times</em> newspaper headline in the genesis block: <strong>"Chancellor on brink of second bailout for banks."</strong> Bitcoin was deliberately designed to solve the debasement problem: its supply is fixed at 21 million coins, enforced by mathematics rather than political promises. No emperor, president, or central bank can increase the supply. The Roman denarius, the Weimar mark, the pre-FDR dollar — all were debased when governments faced fiscal pressure. Bitcoin's supply schedule makes this structurally impossible.</p>
+            <div class="timeline-stat">21,000,000 BTC · Hard cap · Enforced by mathematics · Forever</div>
+            <a class="source-link" href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener noreferrer">↗ Satoshi Nakamoto — Bitcoin Whitepaper (2008)</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="quote-block">
+        <div class="quote-marks">&ldquo;</div>
+        <div class="quote-text">The entire history of government-controlled money is the history of inflation, because the temptation to print is always irresistible to the politicians in charge.</div>
+        <div class="quote-author">— Saifedean Ammous, <em>The Bitcoin Standard</em> (2018)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: BROKEN MONEY -->
+  <section id="broken-money" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Lyn Alden · Broken Money (2023)</div>
+        <h2 class="section-title">Broken Money: Why Our Financial System is Failing Us</h2>
+        <p class="section-desc">Lyn Alden's landmark 2023 book argues that money itself — not just financial policy — is fundamentally broken. Drawing on monetary history spanning millennia, she makes the case that fiat currency is a flawed experiment and that Bitcoin is the first genuinely new monetary technology in centuries.</p>
+      </div>
+
+      <div class="book-intro">
+        <div class="book-visual">
+          <div class="book-3d">
+            <div class="book-spine">&#x20BF;</div>
+            <div class="book-front">
+              <div class="book-front-content">
+                <div class="book-front-title">Broken<br>Money</div>
+                <div class="book-front-divider"></div>
+                <div class="book-front-author">Lyn Alden</div>
+                <div class="book-front-year">2023</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="book-summary">
+          <h3>Core Thesis</h3>
+          <p>Money is fundamentally a <strong>communication and ledger technology</strong> — a system for tracking and transmitting value across time and space. Throughout history, societies have used many forms of money: shells, gold, silver, paper. Each was eventually replaced by something with superior monetary properties.</p>
+          <p>Alden argues the current fiat system — where governments create money without constraint — is inherently prone to debasement. This creates a systemic, ongoing transfer of wealth from ordinary savers to those closest to the money creation process (governments, banks, wealthy asset holders). Economist Richard Cantillon first described this dynamic in the 18th century — it is now known as the <strong>Cantillon Effect</strong>.</p>
+          <p>Her conclusion: Bitcoin is the first monetary technology that solves the core problem — providing absolute, mathematically-enforced scarcity that no authority can override.</p>
+        </div>
+      </div>
+
+      <div class="section-subheader">
+        <h3>Key Facts &amp; Statistics</h3>
+      </div>
+
+      <div class="facts-grid">
+        <div class="fact-card">
+          <div class="fact-icon">&#128184;</div>
+          <div class="fact-title">Dollar Purchasing Power</div>
+          <div class="fact-stat">~97% Lost</div>
+          <div class="fact-desc">Decline in US dollar purchasing power since the Federal Reserve was established in 1913. A 1913 dollar has the purchasing power of roughly 3–4 cents today.</div>
+          <a class="source-link" href="https://www.bls.gov/data/inflation_calculator.htm" target="_blank" rel="noopener noreferrer">↗ BLS CPI Inflation Calculator</a>
+        </div>
+        <div class="fact-card">
+          <div class="fact-icon">&#128200;</div>
+          <div class="fact-title">Post-Nixon Decline</div>
+          <div class="fact-stat">~87% Lost</div>
+          <div class="fact-desc">Decline in dollar purchasing power since August 1971, when Nixon suspended gold convertibility, removing any hard constraint on money creation.</div>
+          <a class="source-link" href="https://www.bls.gov/data/inflation_calculator.htm" target="_blank" rel="noopener noreferrer">↗ BLS CPI Inflation Calculator</a>
+        </div>
+        <div class="fact-card">
+          <div class="fact-icon">&#127963;</div>
+          <div class="fact-title">Fiat Currency Failures</div>
+          <div class="fact-stat">Hundreds</div>
+          <div class="fact-desc">The number of fiat currencies that have failed through hyperinflation, default, or forced replacement. No fiat currency has maintained purchasing power over a multi-century timeframe.</div>
+          <a class="source-link" href="https://www.lynalden.com/broken-money/" target="_blank" rel="noopener noreferrer">↗ Lyn Alden — Broken Money (2023)</a>
+        </div>
+        <div class="fact-card">
+          <div class="fact-icon">&#x2696;</div>
+          <div class="fact-title">The Cantillon Effect</div>
+          <div class="fact-stat">Structural Inequality</div>
+          <div class="fact-desc">Newly created money benefits those who receive it first — governments, banks, and wealthy asset holders — before prices rise. By the time new money reaches ordinary workers, prices have already adjusted upward.</div>
+          <a class="source-link" href="https://www.lynalden.com/broken-money/" target="_blank" rel="noopener noreferrer">↗ Lyn Alden — Broken Money (2023)</a>
+        </div>
+        <div class="fact-card">
+          <div class="fact-icon">&#127981;</div>
+          <div class="fact-title">Fractional Reserve Amplification</div>
+          <div class="fact-stat">Money from Thin Air</div>
+          <div class="fact-desc">Commercial banks can create money through lending — for every dollar deposited, they can loan out many more. This system requires perpetual debt growth to sustain itself, and collapses when trust breaks down.</div>
+          <a class="source-link" href="https://www.lynalden.com/broken-money/" target="_blank" rel="noopener noreferrer">↗ Lyn Alden — Broken Money (2023)</a>
+        </div>
+        <div class="fact-card">
+          <div class="fact-icon">&#128225;</div>
+          <div class="fact-title">Money as Communication</div>
+          <div class="fact-stat">The Core Insight</div>
+          <div class="fact-desc">Alden's central reframing: money is not a "thing" — it's a ledger, a communication technology for recording and transmitting value. Better ledger technology (like Bitcoin) can replace inferior ledger technology (fiat), just as email replaced physical mail.</div>
+          <a class="source-link" href="https://www.lynalden.com/broken-money/" target="_blank" rel="noopener noreferrer">↗ Lyn Alden — Broken Money (2023)</a>
+        </div>
+        <div class="fact-card">
+          <div class="fact-icon">&#9889;</div>
+          <div class="fact-title">Energy-Backed Money</div>
+          <div class="fact-stat">Proof of Work</div>
+          <div class="fact-desc">Sound money requires real-world energy and work to produce — whether gold mining or Bitcoin mining. This "proof of work" prevents arbitrary creation and creates unforgeable costliness. Fiat requires no work: it is created with a keystroke.</div>
+          <a class="source-link" href="https://www.lynalden.com/broken-money/" target="_blank" rel="noopener noreferrer">↗ Lyn Alden — Broken Money (2023)</a>
+        </div>
+        <div class="fact-card">
+          <div class="fact-icon">&#127758;</div>
+          <div class="fact-title">Banking the Unbanked</div>
+          <div class="fact-stat">~1.4 Billion Adults</div>
+          <div class="fact-desc">Adults globally without access to a bank account. Many are excluded by geography, documentation, government restrictions, or poverty. Bitcoin and the Lightning Network provide financial access to anyone with a smartphone.</div>
+          <a class="source-link" href="https://www.worldbank.org/en/publication/globalfindex" target="_blank" rel="noopener noreferrer">↗ World Bank Global Findex 2021</a>
+        </div>
+      </div>
+
+      <div class="deep-dives">
+        <h3>Deep Dives: Alden's Key Arguments</h3>
+        <p class="deep-dives-intro">Click any topic to expand the full argument.</p>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-btn" aria-expanded="false">
+              <span>The Nixon Shock (1971): The Untethering of Money</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p>On August 15, 1971, President Nixon unilaterally ended the Bretton Woods system by suspending the dollar's convertibility into gold. From that moment, the dollar was backed only by trust in the US government — not any physical commodity. This "Nixon Shock" fundamentally changed the nature of all global money, since every major currency was pegged to the dollar.</p>
+              <p>Alden documents how this single decision unleashed a 50-year monetary experiment: fiat money with no external constraint on creation. The results are measurable — dramatically faster dollar debasement, rising asset prices relative to wages, increasing wealth inequality, and the financialization of the economy as people are forced to invest in assets (stocks, real estate) just to preserve purchasing power.</p>
+              <p>Before 1971: average American could afford a house on one income. After 1971: housing costs have risen dramatically faster than wages, requiring two incomes and large debt loads just to own a home in most cities.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-btn" aria-expanded="false">
+              <span>Fiscal Dominance: When Debt Controls Monetary Policy</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p>When a government's debt is so large that the central bank cannot raise interest rates without triggering a fiscal crisis, this situation is called "fiscal dominance." At $36T in US debt, every 1 percentage point rise in average interest rates costs roughly $360 billion in additional annual interest — more than the entire defense budget of most countries.</p>
+              <p>This severely limits the Federal Reserve's ability to fight inflation with rate hikes, because doing so accelerates the debt spiral. Higher rates → higher interest costs → larger deficits → more debt issuance → potential loss of confidence → even higher rates. Alden argues the US is already in or approaching fiscal dominance, meaning sustained high inflation may be structurally baked in as the path of least political resistance.</p>
+              <p>The implication: the Fed's independence to fight inflation is constrained by the Treasury's need to borrow cheaply. This is not a temporary problem — it compounds with every year of deficit spending.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-btn" aria-expanded="false">
+              <span>The Petrodollar System: A Fading Foundation</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p>Since the 1970s, global oil trade has been priced primarily in US dollars, creating structural demand for dollars worldwide. Countries must hold dollars to buy oil — this "petrodollar" arrangement has supported dollar value and allowed the US to run persistent trade deficits without the currency collapsing.</p>
+              <p>This arrangement is now under visible pressure. Saudi Arabia, Russia, China, and others are increasingly settling oil trades in non-dollar currencies — yuan, rubles, UAE dirhams. The BRICS nations have discussed creating alternatives to dollar-denominated trade settlement. As dollar demand from oil trade diminishes, some of the artificial structural demand for US dollars could dissipate, adding significant downward pressure on purchasing power.</p>
+              <p>This isn't an overnight event — but it is a structural trend that Alden identifies as a long-term headwind for dollar strength, compounding the fiscal dominance problem.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-btn" aria-expanded="false">
+              <span>Bitcoin as Monetary Evolution — Not Just Digital Gold</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p>Alden concludes that Bitcoin represents the most significant monetary innovation since paper money replaced gold coins. It combines the core properties of the best historical monies while adding entirely new capabilities: the scarcity of gold (fixed supply of 21 million), the portability of digital money (transmittable anywhere in seconds for minimal cost), the censorship-resistance of physical cash (no government can freeze a self-custodial Bitcoin wallet), and the auditability of a public ledger (anyone can verify the total supply in real time).</p>
+              <p>Critically, Bitcoin is the first monetary network in history where the rules are enforced by mathematics and distributed consensus — not by any government, bank, or trusted third party. The protocol cannot be changed by executive order, emergency decree, or central bank decision. This is a genuinely new property that no prior monetary system has ever possessed.</p>
+              <p>Alden is careful not to predict price — her argument is about Bitcoin's monetary properties and their fit with the problems she identifies in the current system. Whether Bitcoin achieves widespread adoption as monetary infrastructure depends on network effects, regulatory environment, and continued development of the Lightning Network for everyday payments.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: LAYERED MONEY -->
+  <section id="layered-money" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Nik Bhatia · Layered Money (2021)</div>
+        <h2 class="section-title">How Money Works in Layers</h2>
+        <p class="section-desc">Every monetary system in history has been a pyramid of promises. At the top: a settlement asset with no counterparty risk. Below it: progressively more abstract promises to deliver that asset. Understanding this structure explains both why the current system is fragile — and precisely why Bitcoin matters.</p>
+      </div>
+
+      <div class="layer-list">
+        <div class="layer-item layer-1">
+          <div class="layer-num">Layer 1</div>
+          <div>
+            <div class="layer-title">Settlement Money</div>
+            <div class="layer-examples">Gold · Bitcoin</div>
+          </div>
+          <div class="layer-trust">No counterparty risk · Final, irreversible settlement</div>
+        </div>
+        <div class="layer-item layer-2">
+          <div class="layer-num">Layer 2</div>
+          <div>
+            <div class="layer-title">Central Bank Money</div>
+            <div class="layer-examples">Federal Reserve Notes · Bank of England Notes</div>
+          </div>
+          <div class="layer-trust">Promise to deliver Layer 1 · Controlled by governments</div>
+        </div>
+        <div class="layer-item layer-3">
+          <div class="layer-num">Layer 3</div>
+          <div>
+            <div class="layer-title">Commercial Bank Money</div>
+            <div class="layer-examples">Your checking &amp; savings account balance</div>
+          </div>
+          <div class="layer-trust">Promise to deliver Layer 2 · What most people actually hold</div>
+        </div>
+        <div class="layer-item layer-4">
+          <div class="layer-num">Layer 4</div>
+          <div>
+            <div class="layer-title">Financial Products</div>
+            <div class="layer-examples">Eurodollars · Money market funds · Derivatives</div>
+          </div>
+          <div class="layer-trust">Most abstract · Highest counterparty risk · Fewest people realize they hold this</div>
+        </div>
+      </div>
+      <p class="layer-note">Banking and currency crises occur when holders of lower-layer money rush to redeem into higher-layer money. Since 1971, there is no true Layer 1 accessible to ordinary citizens — the US Treasury bond replaced gold at the apex. Bitcoin restores a genuine, accessible, trustless settlement layer.</p>
+
+      <div class="section-subheader">
+        <h3>How the State Captured the Pyramid: Key Milestones</h3>
+        <p>The history of money is the history of states gradually eliminating citizen access to first-layer settlement money — and replacing it with increasingly abstract promises.</p>
+      </div>
+
+      <div class="milestones-grid">
+        <div class="milestone-card">
+          <div class="milestone-year">1252</div>
+          <div class="milestone-title">Gold Florin</div>
+          <div class="milestone-desc">The Florentine mint issued the Fiorino d'Oro — 3.5 grams of pure gold. It maintained <strong>unchanged weight and purity for ~300 years</strong>, becoming the reserve currency of Renaissance Europe and the most stable monetary standard in recorded history.</div>
+          <div class="milestone-verdict milestone-good">First-layer money at its most reliable</div>
+          <a class="source-link" href="https://www.nikbhatia.me/layered-money" target="_blank" rel="noopener noreferrer">↗ Nik Bhatia — Layered Money (2021)</a>
+        </div>
+        <div class="milestone-card">
+          <div class="milestone-year">1609</div>
+          <div class="milestone-title">Bank of Amsterdam</div>
+          <div class="milestone-desc">The world's first reserve bank. Required all gold and silver to be deposited, issued claims in return, and <strong>held 100% reserves</strong> — deposits were direct claims on physical metal with no counterparty risk. Pioneered instant, zero-fee transfers between accounts.</div>
+          <div class="milestone-verdict milestone-good">Second-layer money with full gold backing</div>
+          <a class="source-link" href="https://www.nikbhatia.me/layered-money" target="_blank" rel="noopener noreferrer">↗ Nik Bhatia — Layered Money (2021)</a>
+        </div>
+        <div class="milestone-card">
+          <div class="milestone-year">1694</div>
+          <div class="milestone-title">Bank of England</div>
+          <div class="milestone-desc">Founded specifically to <strong>finance England's military operations</strong>. Became the first institution to monopolize banknote issuance. The state captured "the pivotal position between the first and second layers" — controlling who could issue money substitutes.</div>
+          <div class="milestone-verdict milestone-warn">State captures second-layer money creation</div>
+          <a class="source-link" href="https://www.nikbhatia.me/layered-money" target="_blank" rel="noopener noreferrer">↗ Nik Bhatia — Layered Money (2021)</a>
+        </div>
+        <div class="milestone-card">
+          <div class="milestone-year">1913</div>
+          <div class="milestone-title">Federal Reserve</div>
+          <div class="milestone-desc">Created after the Panic of 1907 as a government-sanctioned banking cartel and "lender of last resort." Eliminated the two natural market limits on credit expansion: bank runs and interbank clearing. <strong>Unlimited credit expansion became structurally possible.</strong></div>
+          <div class="milestone-verdict milestone-warn">Unlimited credit expansion becomes possible</div>
+          <a class="source-link" href="https://www.federalreservehistory.org/essays/federal-reserve-act-signed" target="_blank" rel="noopener noreferrer">↗ Federal Reserve History</a>
+        </div>
+        <div class="milestone-card">
+          <div class="milestone-year">1933</div>
+          <div class="milestone-title">Gold Confiscation</div>
+          <div class="milestone-desc">FDR's Executive Order 6102 forced US citizens to surrender all gold at $20.67/oz — then revalued it to $35/oz the following year. The dollar became second-layer money with <strong>no accessible first layer beneath it</strong> for ordinary Americans.</div>
+          <div class="milestone-verdict milestone-bad">Citizens lose access to first-layer money</div>
+          <a class="source-link" href="https://www.federalreservehistory.org/essays/roosevelts-gold-program" target="_blank" rel="noopener noreferrer">↗ Federal Reserve History</a>
+        </div>
+        <div class="milestone-card">
+          <div class="milestone-year">1944</div>
+          <div class="milestone-title">Bretton Woods</div>
+          <div class="milestone-desc"><strong>730 delegates from 44 nations</strong> established the US dollar as the global reserve currency at $35/oz gold. The US held ~two-thirds of all global gold reserves. Foreign central banks could redeem dollars for gold; ordinary citizens could not.</div>
+          <div class="milestone-verdict milestone-warn">Dollar becomes global reserve</div>
+          <a class="source-link" href="https://www.federalreservehistory.org/essays/bretton-woods-created" target="_blank" rel="noopener noreferrer">↗ Federal Reserve History — Bretton Woods</a>
+        </div>
+        <div class="milestone-card">
+          <div class="milestone-year">1971</div>
+          <div class="milestone-title">Nixon Shock</div>
+          <div class="milestone-desc">Nixon closed the gold window. Even foreign central banks could no longer redeem dollars for gold. <strong>The last link between any currency and a first-layer asset was severed.</strong> US Treasury bonds — promises denominated in dollars — replaced gold at the apex.</div>
+          <div class="milestone-verdict milestone-bad">All monetary links to gold severed globally</div>
+          <a class="source-link" href="https://www.federalreservehistory.org/essays/gold-convertibility-ends" target="_blank" rel="noopener noreferrer">↗ Federal Reserve History — Nixon Shock</a>
+        </div>
+        <div class="milestone-card milestone-card-btc">
+          <div class="milestone-year">2009</div>
+          <div class="milestone-title">Bitcoin</div>
+          <div class="milestone-desc">For the first time in history, a first-layer settlement asset exists that no state can confiscate, devalue, or suspend. Like gold before 1933, it holds no counterparty risk. Unlike gold, it cannot be seized by executive order or counterfeited. <strong>The layered pyramid can be rebuilt on a trustless foundation.</strong></div>
+          <div class="milestone-verdict milestone-btc">New first-layer money · Cryptographically enforced</div>
+          <a class="source-link" href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener noreferrer">↗ Satoshi Nakamoto — Bitcoin Whitepaper</a>
+        </div>
+      </div>
+
+      <div class="quote-block">
+        <div class="quote-marks">&ldquo;</div>
+        <div class="quote-text">The best way to think about Bitcoin's base layer protocol is as a final settlements layer. Every confirmed Bitcoin transaction is settled and irreversible with no counterparty risk — exactly the properties of first-layer money throughout all of monetary history.</div>
+        <div class="quote-author">— Nik Bhatia, <em>Layered Money</em> (2021)</div>
+      </div>
+
+      <div class="insight-box">
+        <div class="insight-icon">&#127981;</div>
+        <div class="insight-content">
+          <h4>The Bank for International Settlements: The Invisible Apex</h4>
+          <p>The Bank for International Settlements (BIS), founded in 1930 in Basel, Switzerland — originally to manage German WWI reparations — now serves as the "central bank of central banks." It is the institution where national central banks hold reserves against each other and settle international balances. The BIS sits above even the Federal Reserve in the monetary pyramid. Most people have never heard of it.</p>
+          <p>Bhatia argues this reveals the true nature of the modern system: an ever-more-abstract pyramid of promises, with most people holding Layer 3 (commercial bank deposits) while the actual settlement layer exists only at the inter-institutional level, completely inaccessible to ordinary citizens.</p>
+          <a class="source-link" href="https://www.bis.org/about/history.htm" target="_blank" rel="noopener noreferrer" style="margin-top:12px;">↗ Bank for International Settlements — History</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: WHY BITCOIN -->
+  <section id="why-bitcoin" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">The Alternative</div>
+        <h2 class="section-title">Why Bitcoin is Different</h2>
+        <p class="section-desc">Given the historical pattern of reserve currency cycles, extreme debt levels, and ongoing monetary debasement — what properties would ideal sound money need to possess? Bitcoin was designed to possess all of them, and has proven its resilience over 16+ years of real-world operation.</p>
+      </div>
+
+      <div class="properties-grid">
+        <div class="property-card">
+          <div class="property-icon">&#128290;</div>
+          <h4>Mathematically Fixed Supply</h4>
+          <p>21 million bitcoin will ever exist. This limit is enforced by the protocol itself — not a government promise or central bank policy. No politician, executive order, or emergency can change it. After the April 2024 halving, Bitcoin's annual supply inflation rate dropped to ~0.85% — lower than gold's estimated ~1.5%.</p>
+          <div class="property-stat">21,000,000 BTC · Hard Cap · Forever</div>
+          <a class="source-link" href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener noreferrer">↗ Satoshi Nakamoto — Bitcoin Whitepaper (2008)</a>
+        </div>
+        <div class="property-card">
+          <div class="property-icon">&#127759;</div>
+          <h4>Truly Decentralized</h4>
+          <p>Bitcoin has no CEO, no headquarters, no board of directors, and no shutdown switch. Thousands of nodes worldwide independently maintain and verify the ledger. No single government, corporation, or person controls the network — a property no monetary system has ever achieved at scale before.</p>
+          <div class="property-stat">~17,000+ reachable nodes globally</div>
+          <a class="source-link" href="https://bitnodes.io/" target="_blank" rel="noopener noreferrer">↗ Bitnodes.io — Live Node Map</a>
+        </div>
+        <div class="property-card">
+          <div class="property-icon">&#128270;</div>
+          <h4>Fully Auditable Supply</h4>
+          <p>Every transaction ever made on Bitcoin is publicly recorded and verifiable by anyone, in real time. You can audit the entire monetary supply in minutes — something impossible with any fiat currency, where money creation happens opaquely through central bank operations and fractional reserve lending.</p>
+          <div class="property-stat">100% Auditable · Always · By Anyone</div>
+          <a class="source-link" href="https://mempool.space/" target="_blank" rel="noopener noreferrer">↗ mempool.space — Bitcoin Explorer</a>
+        </div>
+        <div class="property-card">
+          <div class="property-icon">&#128272;</div>
+          <h4>True Self-Custody</h4>
+          <p>You can hold your own Bitcoin with no bank, broker, or custodian required. "Not your keys, not your coins" — holding your own private keys means no counterparty can freeze, seize, block, or inflate away your holdings. True financial sovereignty for the first time in the digital age.</p>
+          <div class="property-stat">No Counterparty Risk · Sovereign Ownership</div>
+          <a class="source-link" href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener noreferrer">↗ Satoshi Nakamoto — Bitcoin Whitepaper (2008)</a>
+        </div>
+        <div class="property-card">
+          <div class="property-icon">&#9889;</div>
+          <h4>Global Settlement, Always Open</h4>
+          <p>Bitcoin settles globally in ~10 minutes on the base layer, or near-instantly with the Lightning Network. Anyone, anywhere, can send any amount to anyone else with no permission required, no borders, no business hours, 24/7/365. Traditional wire transfers take days and require institutional permission.</p>
+          <div class="property-stat">No Borders · No Business Hours · No Permission</div>
+          <a class="source-link" href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener noreferrer">↗ Satoshi Nakamoto — Bitcoin Whitepaper (2008)</a>
+        </div>
+        <div class="property-card">
+          <div class="property-icon">&#9201;</div>
+          <h4>16+ Years of Proven Uptime</h4>
+          <p>Bitcoin has operated continuously since January 3, 2009 — with 99.98%+ uptime. The protocol has never been successfully hacked. It has survived exchange collapses, government bans, contentious forks, regulatory attacks, and bear markets — and kept producing blocks every ~10 minutes throughout.</p>
+          <div class="property-stat">16+ Years · 99.98%+ Uptime · Never Hacked</div>
+          <a class="source-link" href="https://bitcoin.clarkmoody.com/dashboard/" target="_blank" rel="noopener noreferrer">↗ Clark Moody Bitcoin Dashboard</a>
+        </div>
+        <div class="property-card">
+          <div class="property-icon">&#128200;</div>
+          <h4>Harder Than Gold — Stock-to-Flow</h4>
+          <p>The stock-to-flow (S2F) ratio measures existing supply against annual new production. Gold's ratio is ~60x — meaning it would take 60 years of mining to double the existing supply. After Bitcoin's April 2024 halving, Bitcoin's annual supply growth rate fell to ~0.85%, giving it an S2F ratio exceeding gold's for the first time. Bitcoin is now mathematically the scarcest monetary asset in human history.</p>
+          <div class="property-stat">S2F &gt; 100 · Annual inflation ~0.85% · Below gold's ~1.5%</div>
+          <a class="source-link" href="https://www.gold.org/goldhub/data/gold-supply" target="_blank" rel="noopener noreferrer">↗ World Gold Council — Gold Supply Data</a>
+        </div>
+        <div class="property-card">
+          <div class="property-icon">&#127981;</div>
+          <h4>No Emperor Can Debase It</h4>
+          <p>Roman emperors debased the denarius. Weimar politicians printed the mark into oblivion. FDR confiscated gold and devalued overnight. Nixon ended gold convertibility with a Sunday night TV address. Every monetary system controlled by a government has eventually been debased when political pressure demanded it. Bitcoin's rules cannot be changed by any government, court, or emergency decree.</p>
+          <div class="property-stat">No Executive Order Can Change the Supply Schedule</div>
+          <a class="source-link" href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener noreferrer">↗ Satoshi Nakamoto — Bitcoin Whitepaper (2008)</a>
+        </div>
+      </div>
+
+      <div class="comparison-section">
+        <h3>Comparing Monetary Properties</h3>
+        <div class="table-wrap">
+          <table class="data-table comparison-table">
+            <thead>
+              <tr>
+                <th>Property</th>
+                <th class="th-gold">Gold</th>
+                <th class="th-fiat">Fiat (USD)</th>
+                <th class="th-btc">Bitcoin</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Scarcity</td>
+                <td class="td-gold">&#10003; Limited by mining</td>
+                <td class="td-fiat">&#10007; Unlimited creation</td>
+                <td class="td-btc">&#10003;&#10003; Mathematically fixed at 21M</td>
+              </tr>
+              <tr>
+                <td>Portability</td>
+                <td class="td-gold">&#10007; Heavy &amp; difficult</td>
+                <td class="td-fiat">&#10003; Digital transfers</td>
+                <td class="td-btc">&#10003;&#10003; Instant, global, permissionless</td>
+              </tr>
+              <tr>
+                <td>Divisibility</td>
+                <td class="td-gold">&#10007; Difficult to divide</td>
+                <td class="td-fiat">&#10003; Cents, fractions</td>
+                <td class="td-btc">&#10003;&#10003; 1/100,000,000 BTC (1 satoshi)</td>
+              </tr>
+              <tr>
+                <td>Censorship Resistance</td>
+                <td class="td-gold">&#10007; Can be confiscated</td>
+                <td class="td-fiat">&#10007; Freezable, sanctionable</td>
+                <td class="td-btc">&#10003;&#10003; Self-custodial private keys</td>
+              </tr>
+              <tr>
+                <td>Verifiability</td>
+                <td class="td-gold">&#10007; Requires physical assay</td>
+                <td class="td-fiat">&#10007; Trust required</td>
+                <td class="td-btc">&#10003;&#10003; Cryptographically proven</td>
+              </tr>
+              <tr>
+                <td>Supply Auditability</td>
+                <td class="td-gold">&#10007; Unknown total supply</td>
+                <td class="td-fiat">&#10007; Opaque Fed balance sheet</td>
+                <td class="td-btc">&#10003;&#10003; Fully transparent, real-time</td>
+              </tr>
+              <tr>
+                <td>Settlement Speed</td>
+                <td class="td-gold">&#10007; Days (physical transfer)</td>
+                <td class="td-fiat">~ Hours to days (SWIFT/wire)</td>
+                <td class="td-btc">&#10003;&#10003; Minutes (base) / Instant (Lightning)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="quote-block">
+        <div class="quote-marks">&ldquo;</div>
+        <div class="quote-text">Bitcoin is a remarkable cryptographic achievement, and the ability to create something that is not duplicable in the digital world has enormous value.</div>
+        <div class="quote-author">— Eric Schmidt, Former CEO of Google</div>
+      </div>
+
+      <div class="resources-section">
+        <h3>Keep Exploring: Essential Reading</h3>
+        <p class="resources-intro">This site is a living document — updated as new research and insights emerge. The goal is not to tell you what to think, but to present the evidence and let you reason through it.</p>
+        <div class="resources-grid">
+          <div class="resource-card">
+            <div class="resource-title">The Changing World Order</div>
+            <div class="resource-author">Ray Dalio · 2021</div>
+            <div class="resource-desc">The definitive macro framework for understanding the rise and fall of empires, reserve currencies, and the Big Debt Cycle. Essential historical context.</div>
+          </div>
+          <div class="resource-card resource-featured">
+            <div class="resource-title">Broken Money</div>
+            <div class="resource-author">Lyn Alden · 2023</div>
+            <div class="resource-desc">The most comprehensive examination of monetary history and Bitcoin's role in solving the broken money problem. Rigorous, data-driven, and balanced.</div>
+          </div>
+          <div class="resource-card">
+            <div class="resource-title">The Bitcoin Standard</div>
+            <div class="resource-author">Saifedean Ammous · 2018</div>
+            <div class="resource-desc">The economic case for Bitcoin as sound money, tracing the history of money and explaining why sound money matters for civilization.</div>
+          </div>
+          <div class="resource-card">
+            <div class="resource-title">Layered Money</div>
+            <div class="resource-author">Nik Bhatia · 2021</div>
+            <div class="resource-desc">How money works in layers — from gold to dollars to Bitcoin — and why Bitcoin's architecture mirrors the most durable monetary systems in history.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIBLIOGRAPHY -->
+  <section class="bibliography">
+    <div class="container">
+      <div class="bib-header">
+        <h2>Bibliography &amp; Sources</h2>
+        <p>All claims and statistics on this site are drawn from the primary sources listed below. Where data is estimated or approximated, that is noted in the relevant section. The goal is intellectual honesty — follow the links and read the primary sources yourself.</p>
+      </div>
+
+      <div class="bib-sections">
+
+        <div class="bib-group">
+          <div class="bib-group-title">Books</div>
+          <ol class="bib-list">
+            <li class="bib-entry">
+              <span class="bib-num">1</span>
+              <div class="bib-content">
+                <strong>Dalio, Ray.</strong> <em>Principles for Dealing with the Changing World Order: Why Nations Succeed and Fail.</em> Simon &amp; Schuster, 2021. <em>— Primary source for the reserve currency cycle data and Big Debt Cycle framework.</em>
+                <br><a class="bib-url" href="https://www.principles.com/the-changing-world-order/" target="_blank" rel="noopener noreferrer">↗ principles.com/the-changing-world-order/</a>
+              </div>
+            </li>
+            <li class="bib-entry">
+              <span class="bib-num">2</span>
+              <div class="bib-content">
+                <strong>Alden, Lyn.</strong> <em>Broken Money: Why Our Financial System Is Failing Us and How We Can Make It Better.</em> Timestamp Press, 2023. <em>— Primary source for the monetary history, Cantillon Effect, fiscal dominance, and Bitcoin analysis in Section 3.</em>
+                <br><a class="bib-url" href="https://www.lynalden.com/broken-money/" target="_blank" rel="noopener noreferrer">↗ lynalden.com/broken-money/</a>
+              </div>
+            </li>
+            <li class="bib-entry">
+              <span class="bib-num">3</span>
+              <div class="bib-content">
+                <strong>Reinhart, Carmen M. &amp; Kenneth S. Rogoff.</strong> <em>This Time Is Different: Eight Centuries of Financial Folly.</em> Princeton University Press, 2009. <em>— Historical data on sovereign debt crises and default patterns referenced in Section 2.</em>
+                <br><a class="bib-url" href="https://press.princeton.edu/books/hardcover/9780691142166/this-time-is-different" target="_blank" rel="noopener noreferrer">↗ press.princeton.edu</a>
+              </div>
+            </li>
+            <li class="bib-entry">
+              <span class="bib-num">4</span>
+              <div class="bib-content">
+                <strong>Ammous, Saifedean.</strong> <em>The Bitcoin Standard: The Decentralized Alternative to Central Banking.</em> Wiley, 2018. <em>— Primary source for the stock-to-flow framework, Roman denarius debasement, Yap Island stone money, Weimar hyperinflation data, and the sound money / civilization argument. Also referenced in Section 4 (Why Bitcoin) and Section 5 (History of Debasement).</em>
+                <br><a class="bib-url" href="https://saifedean.com/thebitcoinstandard/" target="_blank" rel="noopener noreferrer">↗ saifedean.com/thebitcoinstandard/</a>
+              </div>
+            </li>
+            <li class="bib-entry">
+              <span class="bib-num">4b</span>
+              <div class="bib-content">
+                <strong>Ammous, Saifedean.</strong> <em>The Fiat Standard: The Debt Slavery Alternative to Human Civilization.</em> Saifedean.com, 2021. <em>— Primary source for the "What Changed in 1971" section: US debt 90x increase, global M2 growth rates, post-1971 dietary data, and the "fiat mining" framework.</em>
+                <br><a class="bib-url" href="https://saifedean.com/thefiatstandard/" target="_blank" rel="noopener noreferrer">↗ saifedean.com/thefiatstandard/</a>
+              </div>
+            </li>
+            <li class="bib-entry">
+              <span class="bib-num">4c</span>
+              <div class="bib-content">
+                <strong>Bhatia, Nik.</strong> <em>Layered Money: From Gold and Dollars to Bitcoin and Central Bank Digital Currencies.</em> Self-published, 2021. <em>— Primary source for the "Layered Money" section: gold florin history, Bank of Amsterdam, Bank of England, FDR gold confiscation mechanics, Bretton Woods delegate count, Nixon Shock $22B outflow, and Bitcoin as first-layer settlement money.</em>
+                <br><a class="bib-url" href="https://www.nikbhatia.me/layered-money" target="_blank" rel="noopener noreferrer">↗ nikbhatia.me/layered-money</a>
+              </div>
+            </li>
+            <li class="bib-entry">
+              <span class="bib-num">4d</span>
+              <div class="bib-content">
+                <strong>Rothbard, Murray N.</strong> <em>Anatomy of the State.</em> Mises Institute, 1974 (originally 1965). <em>— Source for the five "command posts" of state power (including money), the argument that central banking serves to finance government deficits and cartelize commercial banks, and the "inflation as hidden tax" framing.</em>
+                <br><a class="bib-url" href="https://mises.org/library/anatomy-state" target="_blank" rel="noopener noreferrer">↗ mises.org/library/anatomy-state (free PDF)</a>
+              </div>
+            </li>
+            <li class="bib-entry">
+              <span class="bib-num">5</span>
+              <div class="bib-content">
+                <strong>Cantillon, Richard.</strong> <em>Essay on the Nature of Commerce in General</em> (Essai sur la Nature du Commerce en Général). Written c. 1730, published 1755. Translated by Henry Higgs, 1931. <em>— Original articulation of what is now called the "Cantillon Effect."</em>
+              </div>
+            </li>
+            <li class="bib-entry">
+              <span class="bib-num">6</span>
+              <div class="bib-content">
+                <strong>Nakamoto, Satoshi.</strong> "Bitcoin: A Peer-to-Peer Electronic Cash System." 2008. <em>— Original whitepaper establishing Bitcoin's design, fixed supply, and proof-of-work mechanism.</em>
+                <br><a class="bib-url" href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener noreferrer">↗ bitcoin.org/bitcoin.pdf</a>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="bib-group">
+          <div class="bib-group-title">US Government &amp; Federal Reserve Data</div>
+          <ol class="bib-list">
+            <li class="bib-entry">
+              <span class="bib-num">7</span>
+              <div class="bib-content">
+                <strong>Federal Reserve Economic Data (FRED).</strong> "Federal Debt: Total Public Debt as Percent of Gross Domestic Product." Series: GFDEGDQ188S. Federal Reserve Bank of St. Louis. <em>— Primary source for the US Debt-to-GDP chart and ratio figures.</em>
+                <br><a class="bib-url" href="https://fred.stlouisfed.org/series/GFDEGDQ188S" target="_blank" rel="noopener noreferrer">↗ fred.stlouisfed.org/series/GFDEGDQ188S</a>
+              </div>
+            </li>
+            <li class="bib-entry">
+              <span class="bib-num">8</span>
+              <div class="bib-content">
+                <strong>Congressional Budget Office (CBO).</strong> <em>The Budget and Economic Outlook: 2024 to 2034.</em> February 2024. <em>— Source for interest cost, deficit figures, and debt projections in Section 2.</em>
+                <br><a class="bib-url" href="https://www.cbo.gov/topics/budget/federal-debt" target="_blank" rel="noopener noreferrer">↗ cbo.gov/topics/budget/federal-debt</a>
+              </div>
+            </li>
+            <li class="bib-entry">
+              <span class="bib-num">9</span>
+              <div class="bib-content">
+                <strong>Congressional Budget Office (CBO).</strong> "Monthly Budget Review: Summary for Fiscal Year 2024." November 2024. <em>— Source for FY2024 deficit of ~$1.8T.</em>
+                <br><a class="bib-url" href="https://www.cbo.gov/publication/60039" target="_blank" rel="noopener noreferrer">↗ cbo.gov/publication/60039</a>
+              </div>
+            </li>
+            <li class="bib-entry">
+              <span class="bib-num">10</span>
+              <div class="bib-content">
+                <strong>US Treasury, Bureau of the Fiscal Service.</strong> "Debt to the Penny." <em>— Source for the $36.2T national debt figure.</em>
+                <br><a class="bib-url" href="https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/debt-to-the-penny/" target="_blank" rel="noopener noreferrer">↗ fiscaldata.treasury.gov</a>
+              </div>
+            </li>
+            <li class="bib-entry">
+              <span class="bib-num">11</span>
+              <div class="bib-content">
+                <strong>US Bureau of Labor Statistics.</strong> Consumer Price Index (CPI) Historical Data and Inflation Calculator, 1913–present. <em>— Source for the ~97% dollar purchasing power decline since 1913 and ~87% since 1971.</em>
+                <br><a class="bib-url" href="https://www.bls.gov/data/inflation_calculator.htm" target="_blank" rel="noopener noreferrer">↗ bls.gov — CPI Inflation Calculator</a>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="bib-group">
+          <div class="bib-group-title">International Data</div>
+          <ol class="bib-list">
+            <li class="bib-entry">
+              <span class="bib-num">12</span>
+              <div class="bib-content">
+                <strong>International Monetary Fund (IMF).</strong> World Economic Outlook Database, October 2024. <em>— Source for international debt-to-GDP comparisons (Japan, Greece, UK) in Section 2.</em>
+                <br><a class="bib-url" href="https://www.imf.org/en/Publications/WEO/weo-database/2024/October" target="_blank" rel="noopener noreferrer">↗ imf.org — WEO Database</a>
+              </div>
+            </li>
+            <li class="bib-entry">
+              <span class="bib-num">13</span>
+              <div class="bib-content">
+                <strong>World Bank.</strong> <em>Global Findex Database 2021: Financial Inclusion, Digital Payments, and Resilience in the Age of COVID-19.</em> 2022. <em>— Source for the ~1.4 billion unbanked adults statistic.</em>
+                <br><a class="bib-url" href="https://www.worldbank.org/en/publication/globalfindex" target="_blank" rel="noopener noreferrer">↗ worldbank.org/en/publication/globalfindex</a>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="bib-group">
+          <div class="bib-group-title">Economic Data</div>
+          <ol class="bib-list">
+            <li class="bib-entry">
+              <span class="bib-num">13a</span>
+              <div class="bib-content">
+                <strong>Economic Policy Institute (EPI).</strong> "The Productivity–Pay Gap." Updated regularly. <em>— Source for the 1979–2020 productivity (+61%) vs. hourly compensation (+17.5%) divergence data cited in the "After 1971" section.</em>
+                <br><a class="bib-url" href="https://www.epi.org/productivity-pay-gap/" target="_blank" rel="noopener noreferrer">↗ epi.org/productivity-pay-gap/</a>
+              </div>
+            </li>
+            <li class="bib-entry">
+              <span class="bib-num">13b</span>
+              <div class="bib-content">
+                <strong>Federal Reserve Economic Data (FRED).</strong> "Personal Saving Rate." Series: PSAVERT. Federal Reserve Bank of St. Louis. <em>— Source for the US personal savings rate decline from ~13% (early 1970s) to ~4% (2024) in the savings rate chart.</em>
+                <br><a class="bib-url" href="https://fred.stlouisfed.org/series/PSAVERT" target="_blank" rel="noopener noreferrer">↗ fred.stlouisfed.org/series/PSAVERT</a>
+              </div>
+            </li>
+            <li class="bib-entry">
+              <span class="bib-num">13c</span>
+              <div class="bib-content">
+                <strong>Chetty, Raj, David Grusky, Maximilian Hell, Nathaniel Hendren, Robert Manduca, and Jimmy Narang.</strong> "The Fading American Dream: Trends in Absolute Income Mobility Since 1940." <em>Science</em>, Vol. 356, 2017. <em>— Source for the intergenerational mobility statistic: young adults earning more than their parents fell from ~90% (early 1970s cohort) to ~50% (1980s cohort).</em>
+                <br><a class="bib-url" href="https://opportunityinsights.org/paper/abs-mobility-frisch/" target="_blank" rel="noopener noreferrer">↗ opportunityinsights.org</a>
+              </div>
+            </li>
+            <li class="bib-entry">
+              <span class="bib-num">13d</span>
+              <div class="bib-content">
+                <strong>World Gold Council.</strong> Gold Supply Data — Annual mine production and estimated above-ground stocks. <em>— Source for gold's stock-to-flow ratio (~60x) and annual supply growth rate (~1.5%) used in the stock-to-flow property card.</em>
+                <br><a class="bib-url" href="https://www.gold.org/goldhub/data/gold-supply" target="_blank" rel="noopener noreferrer">↗ gold.org/goldhub/data/gold-supply</a>
+              </div>
+            </li>
+            <li class="bib-entry">
+              <span class="bib-num">13e</span>
+              <div class="bib-content">
+                <strong>Furness, William Henry III.</strong> <em>The Island of Stone Money: Uap of the Carolines.</em> J. B. Lippincott, 1910. <em>— Original ethnographic account of the Yap Island Rai stone monetary system and the role of David O'Keefe in its collapse.</em>
+                <br><a class="bib-url" href="https://archive.org/details/islandofstoneone00furnrich" target="_blank" rel="noopener noreferrer">↗ archive.org (free full text)</a>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="bib-group">
+          <div class="bib-group-title">Bitcoin Data &amp; Network</div>
+          <ol class="bib-list">
+            <li class="bib-entry">
+              <span class="bib-num">14</span>
+              <div class="bib-content">
+                <strong>Bitnodes.io.</strong> "Global Bitcoin Nodes Distribution." Real-time network node statistics. <em>— Source for the ~17,000+ reachable full node count.</em>
+                <br><a class="bib-url" href="https://bitnodes.io/" target="_blank" rel="noopener noreferrer">↗ bitnodes.io</a>
+              </div>
+            </li>
+            <li class="bib-entry">
+              <span class="bib-num">15</span>
+              <div class="bib-content">
+                <strong>Clark Moody.</strong> Bitcoin Dashboard. Real-time Bitcoin network metrics, uptime, and blockchain statistics.
+                <br><a class="bib-url" href="https://bitcoin.clarkmoody.com/dashboard/" target="_blank" rel="noopener noreferrer">↗ bitcoin.clarkmoody.com/dashboard/</a>
+              </div>
+            </li>
+            <li class="bib-entry">
+              <span class="bib-num">16</span>
+              <div class="bib-content">
+                <strong>mempool.space.</strong> Bitcoin blockchain explorer and transaction tracker. Open-source, self-hostable Bitcoin block explorer. <em>— Source for verifying Bitcoin's auditable supply and transaction history.</em>
+                <br><a class="bib-url" href="https://mempool.space/" target="_blank" rel="noopener noreferrer">↗ mempool.space</a>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="bib-group">
+          <div class="bib-group-title">Historical Records</div>
+          <ol class="bib-list">
+            <li class="bib-entry">
+              <span class="bib-num">17</span>
+              <div class="bib-content">
+                <strong>Miller Center, University of Virginia.</strong> "August 15, 1971: Address to the Nation on the Economy" (Nixon Shock). Presidential Speeches archive.
+                <br><a class="bib-url" href="https://millercenter.org/the-presidency/presidential-speeches/august-15-1971-address-nation-economy" target="_blank" rel="noopener noreferrer">↗ millercenter.org</a>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-symbol">&#x20BF;</span>
+          <span class="footer-title">The Case for Bitcoin</span>
+        </div>
+        <p class="footer-disclaimer">This site is a personal knowledge curation project for educational purposes only. Nothing here constitutes financial advice. All data is approximate and sourced from publicly available research. Always do your own research (DYOR).</p>
+        <div class="footer-sources">
+          <strong>Primary Sources:</strong>
+          Ray Dalio — <em>Principles for Dealing with the Changing World Order</em> (2021) &middot;
+          Lyn Alden — <em>Broken Money</em> (2023) &middot;
+          US Congressional Budget Office (CBO) &middot;
+          Federal Reserve Economic Data (FRED)
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
