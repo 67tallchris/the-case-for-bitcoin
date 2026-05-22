@@ -515,12 +515,37 @@ function initScrollAnimations() {
 }
 
 // ===========================
+// SCROLLSPY
+// ===========================
+function initScrollSpy() {
+  const sections = [...document.querySelectorAll('section[id]')];
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  function updateActive() {
+    const scrollY = window.scrollY + 80;
+    let activeId = sections[0]?.id;
+
+    sections.forEach(section => {
+      if (section.offsetTop <= scrollY) activeId = section.id;
+    });
+
+    navLinks.forEach(link => {
+      link.classList.toggle('active', link.getAttribute('href') === `#${activeId}`);
+    });
+  }
+
+  window.addEventListener('scroll', updateActive, { passive: true });
+  updateActive();
+}
+
+// ===========================
 // INIT
 // ===========================
 document.addEventListener('DOMContentLoaded', () => {
   initNavbar();
   initAccordion();
   initScrollAnimations();
+  initScrollSpy();
 
   // Charts need a slight delay to ensure containers have dimensions
   requestAnimationFrame(() => {

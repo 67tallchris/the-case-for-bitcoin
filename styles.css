@@ -167,6 +167,14 @@ em { color: var(--text-secondary); font-style: italic; }
   color: var(--text-primary);
 }
 
+.nav-links a.active {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
 .nav-toggle {
   display: none;
   background: none;
